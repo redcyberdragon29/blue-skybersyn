@@ -1,0 +1,73 @@
+{
+    "ACCOUNTS_TO_WATCH": [
+        "schumer.senate.gov",
+        "slotkin.senate.gov",
+        "hakeem-jeffries.bsky.social",
+        "fetterman.senate.gov",
+        "corybooker.com",
+        "kamalaharris.com",
+        "governor.ca.gov",
+        "gavinnewsom.bsky.social"
+    ],
+    "REPLIES": {
+        "default": [
+            "The people are not falling for your fake progressivism anymore, we see through your lies!",
+            "You are a disgrace to the democratic party, your actions show you don't care about the people!",
+            "Democrats need to PRIMARY you out of office, you are not a true representative of the people!",
+            "Your actions show you are more interested in serving corporate interests than the people!",
+            "You are a sellout to the corporate interests, the people deserve better!",
+            "You should just switch parties, people shouldn't mistake you as a supporter of the working class!",
+            "People like you are the problem with the democratic party, try standing for the people!",
+            "You need to be primaryed out of office, you are not a true representative of the people!",
+            "Primary the fake progressives!"
+        ],
+        "slotkin.senate.gov": [
+            "Your vote for Trump nominees is a betrayal to the people of Michigan, resign.",
+            "You care more about posturing against China than serving the people of Michigan, resign.",
+            "You lied to the people of Michigan, you are not a progressive, resign."
+        ],
+        "schumer.senate.gov": [
+            "Your vote for Trump nominees is a betrayal to the people of New York, resign.",
+            "You empowered Trump when you supported the CR, resign!",
+            "You have given political cover to a genocide, Israel is starving kids and you support it, resign!"
+        ],
+        "hakeem-jeffries.bsky.social": [
+            "Primary the spinless democratic leaders like Jeffries!",
+            "You complained when your constituants were calling your office? Just wait till the primary!",
+            "Wake up, your district is working class, you will get trounced by a progressive in the primary!"
+        ],
+        "fetterman.senate.gov": [
+            "You have given political cover to a genocide, Israel is starving kids and you support it, resign!",
+            "You are a disgrace to the democratic party, your actions show you don't care about the people!",
+            "You betrayed the people of Pensylvania by pretending to be a progressive, resign!"
+        ],
+        "booker.senate.gov": [
+            "Your fake resistance is a joke, perfect symbolism to do a 24 hour fillibuster to oppose NOTHING!",
+            "any more nice wors for Republicans? the Cato Institute can't wait for your next fillibuster!",
+            "NJ deserves better than you, resign!"
+        ],
+        "corybooker.com": [
+            "Your fake resistance is a joke, perfect symbolism to do a 24 hour fillibuster to oppose NOTHING!",
+            "NJ deserves better than you, resign!"
+        ],
+        "kamalaharris.com": [
+            "You lost because you turned your back on economic releif and ending the genocide in Palestine, no one should take you seriously!",
+            "Why did you copy Trump's immigration policy? It's so cruel and inhumane!",
+            "Why did you refuse to break with Biden on the genocide in  Palestine?",
+            "Losers like you should be prevented from running for office in the democratic party! No more Repuiblican-lite!",
+            "Who were you trying to appeal to by campaigning with LIZ CHENEY?"
+        ],
+        "governor.ca.gov": [
+            "You called Abrego Garcia's kidnapping and detention a 'distraction'. Our rights are not a distraction, resign!",
+            "You admitted your son likes Charlie Kirk, you're a joke.",
+            "Talk to any more fascists on your podcast latley?",
+            "You continuoslly stand in the way of progressives in California, you are not the leader we need!"
+        ],
+        "gavinnewsom.bsky.social": [
+            "You called Abrego Garcia's kidnapping and detention a 'distraction'. Our rights are not a distraction, resign!",
+            "You admitted your son likes Charlie Kirk, you're a joke.",
+            "Talk to any more fascists on your podcast latley?",
+            "You continuoslly stand in the way of progressives in California, you are not the leader we need!"
+        ]
+    }
+}

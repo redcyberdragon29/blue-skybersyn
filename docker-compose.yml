@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  bluesky-bot:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: bluesky-bot
+    environment:
+      - DEV_MODE=${DEV_MODE:-True}
+      - CHECK_INTERVAL=${CHECK_INTERVAL:-60}
+      - BLUESKY_HANDLE=${BLUESKY_HANDLE}
+      - BLUESKY_PASSWORD=${BLUESKY_PASSWORD}
+    restart: unless-stopped
+    tty: true  # Keeps the container running
+    stdin_open: true  # Allows interactive mode

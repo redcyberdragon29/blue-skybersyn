@@ -1,0 +1,8 @@
+.env
+.venv
+account_replys.json
+replied_posts.json
+replied_posts_dev.json
+*.db
+*.sqlite3
+*.sqlite
