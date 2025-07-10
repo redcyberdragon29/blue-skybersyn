@@ -44,7 +44,7 @@ class ReplyManager:
         try:
             # Get my recent posts (including replies)
             my_posts = self.client.app.bsky.feed.get_author_feed(
-                {"actor": self.get_my_handle(), "limit": 1000}
+                {"actor": self.get_my_handle(), "limit": 100}
             )
 
             # Check if any of my posts are replies to the target post
@@ -81,7 +81,7 @@ def main():
 
                 try:
                     posts = client.app.bsky.feed.get_author_feed(
-                        {"actor": account, "limit": 5}
+                        {"actor": account, "limit": 1}
                     )
                 except Exception as e:
                     print(f"Error getting posts for {account}: {e}")
@@ -134,7 +134,6 @@ ACCOUNTS_TO_WATCH = [
     "corybooker.com",
     "kamalaharris.com",
     "governor.ca.gov",
-    "gavinnewsom.bsky.social",
 ]
 REPLIES = {
     "default": [
@@ -149,98 +148,57 @@ REPLIES = {
         "Primary the fake progressives!",
     ],
     "slotkin.senate.gov": [
-        "The people are not falling for your fake progressivism anymore, we see through your lies!",
-        "You are a disgrace to the democratic party, your actions show you don't care about the people!",
-        "Democrats need to PRIMARY you out of office, you are not a true representative of the people!",
-        "Your actions show you are more interested in serving corporate interests than the people!",
-        "You are a sellout to the corporate interests, the people deserve better!",
-        "You should just switch parties, people shouldn't mistake you as a supporter of the working class!",
-        "People like you are the problem with the democratic party, try standing for the people!",
-        "You need to be primaryed out of office, you are not a true representative of the people!",
-        "Primary the fake progressives!",
         "Your vote for Trump nominees is a betrayal to the people of Michigan, resign.",
         "You care more about posturing against China than serving the people of Michigan, resign.",
         "You lied to the people of Michigan, you are not a progressive, resign.",
+        "Ex-CIA, pro-war piece of shit!",
+        "Sinophobic, rascist loser. Trying to ban Chinese cars while Trump ruins the economy with tarriffs!",
+        "Crypto Shill!",
+        "You're a CIA asshole. Your mod squad is a joke. Move over for the progressives, you're done." 
     ],
     "schumer.senate.gov": [
-        "The people are not falling for your fake progressivism anymore, we see through your lies!",
-        "You are a disgrace to the democratic party, your actions show you don't care about the people!",
-        "Democrats need to PRIMARY you out of office, you are not a true representative of the people!",
-        "Your actions show you are more interested in serving corporate interests than the people!",
-        "You are a sellout to the corporate interests, the people deserve better!",
-        "You should just switch parties, people shouldn't mistake you as a supporter of the working class!",
-        "People like you are the problem with the democratic party, try standing for the people!",
-        "You need to be primaryed out of office, you are not a true representative of the people!",
-        "Primary the fake progressives!",
         "Your vote for Trump nominees is a betrayal to the people of New York, resign.",
         "You empowered Trump when you supported the CR, resign!",
         "You have given political cover to a genocide, Israel is starving kids and you support it, resign!",
+        "What are your marching orders from Goldman-Sachs, you corrupt loser?",
+        "You enable genocide in Gaza while NYers demand divestment. History will remember your complicity.",
+        "Start looking for a retirement home."
     ],
     "hakeem-jeffries.bsky.social": [
-        "The people are not falling for your fake progressivism anymore, we see through your lies!",
-        "You are a disgrace to the democratic party, your actions show you don't care about the people!",
-        "Democrats need to PRIMARY you out of office, you are not a true representative of the people!",
-        "Your actions show you are more interested in serving corporate interests than the people!",
-        "You are a sellout to the corporate interests, the people deserve better!",
-        "You should just switch parties, people shouldn't mistake you as a supporter of the working class!",
-        "People like you are the problem with the democratic party, try standing for the people!",
-        "You need to be primaryed out of office, you are not a true representative of the people!",
-        "Primary the fake progressives!",
-        "Primary the spinless democratic leaders like Jeffries!",
         "You complained when your constituants were calling your office? Just wait till the primary!",
+        "Median household income of $65000/year in your district and you sell out to wall street EVERY TIME. A mild primary challenge will end you."
         "Wake up, your district is working class, you will get trounced by a progressive in the primary!",
+        "There are alot of Mamdani voters in your district. You will not survive a primary, enjoy your remaining time in office!",
+        "The Mamdani wave is coming for you.....",
+        "Despite representing Brooklyn, you seem to care way more about wallstreet. Why did you let Citi bank write banking regulations?",
+        "Start looking for a retirement home."
+
     ],
     "fetterman.senate.gov": [
-        "The people are not falling for your fake progressivism anymore, we see through your lies!",
-        "You are a disgrace to the democratic party, your actions show you don't care about the people!",
-        "Democrats need to PRIMARY you out of office, you are not a true representative of the people!",
-        "Your actions show you are more interested in serving corporate interests than the people!",
-        "You are a sellout to the corporate interests, the people deserve better!",
-        "You should just switch parties, people shouldn't mistake you as a supporter of the working class!",
-        "People like you are the problem with the democratic party, try standing for the people!",
-        "You need to be primaryed out of office, you are not a true representative of the people!",
-        "Primary the fake progressives!",
         "You have given political cover to a genocide, Israel is starving kids and you support it, resign!",
         "You are a disgrace to the democratic party, your actions show you don't care about the people!",
         "You betrayed the people of Pensylvania by pretending to be a progressive, resign!",
+        "Traitor PoS.",
+        "Lazy, dumb, fake asshole.",
+        "get fucked you genocider asshole."
     ],
     "booker.senate.gov": [
-        "The people are not falling for your fake progressivism anymore, we see through your lies!",
-        "You are a disgrace to the democratic party, your actions show you don't care about the people!",
-        "Democrats need to PRIMARY you out of office, you are not a true representative of the people!",
-        "Your actions show you are more interested in serving corporate interests than the people!",
-        "You are a sellout to the corporate interests, the people deserve better!",
-        "You should just switch parties, people shouldn't mistake you as a supporter of the working class!",
-        "People like you are the problem with the democratic party, try standing for the people!",
-        "You need to be primaryed out of office, you are not a true representative of the people!",
-        "Primary the fake progressives!",
         "Your fake resistance is a joke, perfect symbolism to do a 24 hour fillibuster to oppose NOTHING!",
-        "any more nice wors for Republicans? the Cato Institute can't wait for your next fillibuster!",
+        "any more nice words for Republicans? The Cato Institute can't wait for your next fillibuster!",
         "NJ deserves better than you, resign!",
+        "You are so fake. A progressive will destroy you in the primary. Ask Cuomo",
+        "The Mamdani wave is coming for you.....",
+        "Baby killer! The people of Gaza are starving and you support it!",
     ],
     "corybooker.com": [
-        "The people are not falling for your fake progressivism anymore, we see through your lies!",
-        "You are a disgrace to the democratic party, your actions show you don't care about the people!",
-        "Democrats need to PRIMARY you out of office, you are not a true representative of the people!",
-        "Your actions show you are more interested in serving corporate interests than the people!",
-        "You are a sellout to the corporate interests, the people deserve better!",
-        "You should just switch parties, people shouldn't mistake you as a supporter of the working class!",
-        "People like you are the problem with the democratic party, try standing for the people!",
-        "You need to be primaryed out of office, you are not a true representative of the people!",
-        "Primary the fake progressives!",
         "Your fake resistance is a joke, perfect symbolism to do a 24 hour fillibuster to oppose NOTHING!",
+        "any more nice words for Republicans? The Cato Institute can't wait for your next fillibuster!",
         "NJ deserves better than you, resign!",
+        "Democrats' opposition is a joke, time to primary every one of you mother fuckers!",
+        "Baby killer! The people of Gaza are starving and you support it!",
+        "The Mamdani wave is coming for you.....",
     ],
     "kamalaharris.com": [
-        "The people are not falling for your fake progressivism anymore, we see through your lies!",
-        "You are a disgrace to the democratic party, your actions show you don't care about the people!",
-        "Democrats need to PRIMARY you out of office, you are not a true representative of the people!",
-        "Your actions show you are more interested in serving corporate interests than the people!",
-        "You are a sellout to the corporate interests, the people deserve better!",
-        "You should just switch parties, people shouldn't mistake you as a supporter of the working class!",
-        "People like you are the problem with the democratic party, try standing for the people!",
-        "You need to be primaryed out of office, you are not a true representative of the people!",
-        "Primary the fake progressives!",
         "You lost because you turned your back on economic releif and ending the genocide in Palestine, no one should take you seriously!",
         "Why did you copy Trump's immigration policy? It's so cruel and inhumane!",
         "Why did you refuse to break with Biden on the genocide in  Palestine?",
@@ -248,35 +206,23 @@ REPLIES = {
         "Who were you trying to appeal to by campaigning with LIZ CHENEY?",
     ],
     "governor.ca.gov": [
+        "You called Abrego Garcia's kidnapping and detention a 'distraction'. Our rights are not a distraction, resign!",
+        "You admitted your son likes Charlie Kirk, you're a joke.",
+        "Talk to any more fascists on your podcast latley? We' tried the 'We need to be nicer to Fascists' approach",
+        "You continuoslly stand in the way of progressives in California, you are not the leader we need!",
+        "people call you a hero against Trump when you have said NOTHING about the police violence being inflicted by YOUR cops!",
         "The people are not falling for your fake progressivism anymore, we see through your lies!",
         "You are a disgrace to the democratic party, your actions show you don't care about the people!",
-        "Democrats need to PRIMARY you out of office, you are not a true representative of the people!",
         "Your actions show you are more interested in serving corporate interests than the people!",
         "You are a sellout to the corporate interests, the people deserve better!",
         "You should just switch parties, people shouldn't mistake you as a supporter of the working class!",
         "People like you are the problem with the democratic party, try standing for the people!",
-        "You need to be primaryed out of office, you are not a true representative of the people!",
-        "Primary the fake progressives!",
         "You called Abrego Garcia's kidnapping and detention a 'distraction'. Our rights are not a distraction, resign!",
         "You admitted your son likes Charlie Kirk, you're a joke.",
         "Talk to any more fascists on your podcast latley?",
         "You continuoslly stand in the way of progressives in California, you are not the leader we need!",
     ],
-    "gavinnewsom.bsky.social": [
-        "The people are not falling for your fake progressivism anymore, we see through your lies!",
-        "You are a disgrace to the democratic party, your actions show you don't care about the people!",
-        "Democrats need to PRIMARY you out of office, you are not a true representative of the people!",
-        "Your actions show you are more interested in serving corporate interests than the people!",
-        "You are a sellout to the corporate interests, the people deserve better!",
-        "You should just switch parties, people shouldn't mistake you as a supporter of the working class!",
-        "People like you are the problem with the democratic party, try standing for the people!",
-        "You need to be primaryed out of office, you are not a true representative of the people!",
-        "Primary the fake progressives!",
-        "You called Abrego Garcia's kidnapping and detention a 'distraction'. Our rights are not a distraction, resign!",
-        "You admitted your son likes Charlie Kirk, you're a joke.",
-        "Talk to any more fascists on your podcast latley?",
-        "You continuoslly stand in the way of progressives in California, you are not the leader we need!",
-    ],
+
 }
 
 if __name__ == "__main__":
