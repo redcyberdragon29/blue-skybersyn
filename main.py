@@ -44,7 +44,7 @@ class ReplyManager:
         try:
             # Get my recent posts (including replies)
             my_posts = self.client.app.bsky.feed.get_author_feed(
-                {"actor": self.get_my_handle(), "limit": 100}
+                {"actor": self.get_my_handle(), "limit": 1000}
             )
 
             # Check if any of my posts are replies to the target post
